@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lets Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Chat.css">
+    <script type="text/javascript" src="Chat.js"></script>
+</head>
+
+<body onload="welcome()">s
+    <button class="btn btn-danger glyphicon glyphicon-log-out" style="text-align:right;">Logout</button>
+    <div class="container" style="text-align:center;">
+        <h1 id="welcome"></h1>
+        <h1>Lets Chat</h1>
+        <br>
+        <br>
+        <input id="Addroom" class="form-control" placeholder="Add Room">
+        <br>
+        <button class="btn btn-success" onclick="Addroom()">Add Room</button>
+    </div>
+    <br>
+    <br>
+    <h1 style="text-align:center;">Popular Rooms</h1>
+    <br>
+    <br>
+    <div class="container">
+        <div class="carousel slide" id="mycarousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                        <div class="carousel-content">
+                            <button class="btn btn-success">Save Trees</button>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <div class="carousel-content">
+                            <button class="btn btn-success">Save Animals</button>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <div class="carousel-content">
+                            <button class="btn btn-success">Sports</button>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <div class="carousel-content">
+                            <button class="btn btn-success">Gaming</button>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                    <center>
+                        <div class="carousel-content">
+                            <button class="btn btn-success">Movies and TV Shows</button>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <a rel="prev" class="left carousel-control" href="#mycarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a rel="next" class="right carousel-control" href="#mycarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h3 style="text-align:center;" class="color_white">#TRENDINGROOMS</h3>
+    <div id="output"></div>
+</body>
+
+</html>
